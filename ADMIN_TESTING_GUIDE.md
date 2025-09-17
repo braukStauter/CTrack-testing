@@ -12,25 +12,6 @@ This guide covers all functionality available to users with **Admin permissions*
 
 ## Phase 1: Initial Setup & Configuration
 
-### 1.1 Bot Initialization
-**Command**: `/admin init`
-**Prerequisites**: Must be server owner
-**Steps**:
-1. Run `/admin init` in any channel
-2. Follow the initialization wizard:
-   - Set ARTCC short name (e.g., "ZAB")
-   - Set ARTCC long name (e.g., "Albuquerque ARTCC")
-   - Map required roles (Admin, Training Admin, Training Staff, Member)
-   - Configure feature flags (Special Training, Impromptu Training)
-3. Verify all channels are created properly
-4. Check that embeds appear in appropriate channels
-
-**Expected Results**:
-- Training category and channels created
-- Admin category and channels created
-- All dynamic embeds populated
-- Role mappings saved
-
 ### 1.2 Configuration Management
 **Commands**: Various `/admin config` commands
 **Steps**:
@@ -289,4 +270,5 @@ After completing all tests:
 - [ ] OTS system works end-to-end
 - [ ] Student progression tracking accurate
 - [ ] Instructor capacity management functional
+
 - [ ] Error handling appropriate for all scenarios
