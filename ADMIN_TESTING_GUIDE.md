@@ -28,7 +28,7 @@ This guide covers all functionality available to users with **Admin permissions*
 
 ### 2.1 Student Status Management
 **Commands**: `/admin student set-status`, `/admin student inactive`, `/admin student archive`
-**Test Users**: Use existing members or create test accounts
+**Test Users**: Use existing members who are also testers.
 **Steps**:
 
 #### Status Setting Tests:
@@ -43,10 +43,9 @@ This guide covers all functionality available to users with **Admin permissions*
 4. Test with users on multiple waitlists (should prompt for selection)
 
 #### Inactive/Archive Tests:
-1. Use `/admin student inactive` on active student
+1. Use `/admin student inactive` on active student **Test ONLY with `silent: True` option (If not, the student will actually get a DM!) **
 2. Verify student removed from waitlist and status set to Inactive
-3. Test with `silent: True` option
-4. Repeat for `/admin student archive`
+3. Repeat for `/admin student archive`
 
 ### 2.2 Waitlist Management
 **Commands**: `/admin student add-to-waitlist`, `/admin student set-waitlist-date`
@@ -176,7 +175,7 @@ This guide covers all functionality available to users with **Admin permissions*
 #### User Reports:
 1. `/admin reports user` with Discord mention
 2. `/admin reports user` with VATSIM CID
-3. `/admin reports user` with Discord ID
+3. `/admin reports user` with Discord ID (copy from menu on user profile)
 
 #### Request Management:
 1. `/admin reports req-all` - view all form submissions
@@ -272,3 +271,4 @@ After completing all tests:
 - [ ] Instructor capacity management functional
 
 - [ ] Error handling appropriate for all scenarios
+
